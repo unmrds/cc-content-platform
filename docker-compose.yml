@@ -1,0 +1,27 @@
+version: '3'
+services:
+  instruction:
+    build: .
+    ports:
+      - "8889:8888"
+#    volumes:
+#      - notebook-data:/home/jovyan
+    restart: on-failure
+    
+    # replace the hashed password in this command with your own generated with IPython.lib.passwd
+    command: start-notebook.sh --NotebookApp.password='sha1:fea45cdfb8a0:1b377bfa9e7a43c5f943f859160b7be4475a7d23' # --NotebookApp.base_url=/home/jovyan
+
+  playground:
+    build: .
+    ports:
+      - "8888:8888"
+#    volumes:
+#      - notebook-data:/home/jovyan
+    restart: on-failure
+    
+    # replace the hashed password in this command with your own generated with IPython.lib.passwd
+    command: start-notebook.sh --NotebookApp.password='sha1:fea45cdfb8a0:1b377bfa9e7a43c5f943f859160b7be4475a7d23' # --NotebookApp.base_url=/home/jovyan
+
+
+#volumes:
+#  notebook-data:
