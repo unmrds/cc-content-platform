@@ -1,7 +1,9 @@
 version: '3'
 services:
   instruction:
-    build: .
+    build:
+      context: ./datascience-notebook
+      dockerfile: Dockerfile
     ports:
       - "8889:8888"
 #    volumes:
@@ -12,7 +14,9 @@ services:
     command: start-notebook.sh --NotebookApp.password='sha1:fea45cdfb8a0:1b377bfa9e7a43c5f943f859160b7be4475a7d23' # --NotebookApp.base_url=/home/jovyan
 
   playground:
-    build: .
+    build:
+      context: ./datascience-notebook
+      dockerfile: Dockerfile
     ports:
       - "8888:8888"
 #    volumes:

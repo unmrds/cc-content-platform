@@ -9,3 +9,4 @@ git clone https://github.com/unmrds/cc-database-basics.git
 git clone https://github.com/unmrds/cc-jupyter.git
 git clone https://github.com/unmrds/cc-python-data-apis.git
 git clone https://github.com/unmrds/cc-containers.git
+git clone https://github.com/unmrds/cc-data.git
