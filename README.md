@@ -20,14 +20,14 @@ These platforms are accessible over the web on the host that RDS maintains at:
 
 For the *Playground*\
 Jupyter Notebook: [http://cc.unmrds.net:8888](http://cc.unmrds.net:8888)\
-RStudio: [http://cc.unmrds.net:8787](http://cc.unmrds.net:8787)\
+RStudio: [http://cc.unmrds.net:8787](http://cc.unmrds.net:8787)
 
 
 and
 
 For the *Instruction* platform\
 Jupyter Notebook: [http://cc.unmrds.net:8889](http://cc.unmrds.net:8889)\
-RStudio: [http://cc.unmrds.net:8788](http://cc.unmrds.net:8788)\
+RStudio: [http://cc.unmrds.net:8788](http://cc.unmrds.net:8788)
 
 When run on a local computer the two environments will be available at: 
 
