@@ -12,11 +12,16 @@ RUN apt-get update && \
 	apt-get install -y --no-install-recommends \
 	texlive
 
-COPY getWorkshops.sh /home/jovyan
-RUN chmod ugo+x /home/jovyan/getWorkshops.sh
+RUN mkdir /home/root
+COPY startup_instruction.sh /home/root/startup_instruction.sh
+COPY startup_playground.sh /home/root/startup_playground.sh
+COPY refreshWorkshops.sh /home/root/refreshWorkshops.sh
+RUN chmod ugo+x /home/root/startup_instruction.sh
+RUN chmod ugo+x /home/root/startup_playground.sh
+RUN chmod ugo+rx /home/root/refreshWorkshops.sh
+
 WORKDIR /home/jovyan
+RUN rm -rf /home/jovyan/work
 
 USER jovyan
-RUN ./getWorkshops.sh
-RUN rm -rf /home/jovyan/work
 

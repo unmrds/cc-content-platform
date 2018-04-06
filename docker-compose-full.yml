@@ -1,5 +1,27 @@
 version: '3'
 services:
+  instruction:
+    build:
+      context: ./datascience-notebook
+      dockerfile: Dockerfile
+    ports:
+      - "8889:8888"
+    volumes:
+      - instruction-data:/home/jovyan
+    restart: on-failure
+    
+    # replace the hashed password in this command with your own generated with IPython.lib.passwd
+    command: /home/root/startup_instruction.sh # --NotebookApp.base_url=/home/jovyan
+
+  instruction-rstudio:
+    build:
+      context: ./rstudio
+      dockerfile: Dockerfile
+    ports:
+      - "8788:8787"
+    volumes:
+      - instruction-data:/home/rstudio/shareddata
+
   playground:
     build:
       context: ./datascience-notebook
@@ -23,4 +45,5 @@ services:
       - playground-data:/home/rstudio/shareddata
 
 volumes:
+  instruction-data:
   playground-data:
