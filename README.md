@@ -18,17 +18,22 @@ When initiated, the Coffee & Code instruction environment creates one or two ins
 
 These platforms are accessible over the web on the host that RDS maintains at:
 
-[http://cc.unmrds.net:8888](http://cc.unmrds.net:8888) for the *Playground*
+For the *Playground*\
+Jupyter Notebook: [http://cc.unmrds.net:8888](http://cc.unmrds.net:8888)\
+RStudio: [http://cc.unmrds.net:8787](http://cc.unmrds.net:8787)\
+
 
 and
 
-[http://cc.unmrds.net:8889](http://cc.unmrds.net:8889) for the *Instruction Platform* 
+For the *Instruction* platform\
+Jupyter Notebook: [http://cc.unmrds.net:8889](http://cc.unmrds.net:8889)\
+RStudio: [http://cc.unmrds.net:8788](http://cc.unmrds.net:8788)\
 
 When run on a local computer the two environments will be available at: 
 
-[http://localhost:8888](http://localhost:8888) and 
+[http://localhost:8888](http://localhost:8888) and [http://localhost:8787](http://localhost:8787) for the *playground*
 
-[http://localhost:8889](http://localhost:8889) respectively.
+[http://localhost:8889](http://localhost:8889) and [http://localhost:8788](http://localhost:8788) for the *instruction* platform
 
 ## Running the platform on your local workstation or on a server
 
@@ -50,7 +55,7 @@ From within the repository directory you have two options, both executed from th
 
 command. As noted above, once running, the platform should be available through a web browser on your local computer at:
 
-[http://localhost:8888](http://localhost:8888)
+[http://localhost:8888](http://localhost:8888) and [http://localhost:8787](http://localhost:8787) for the *playground*
 
 2. To run both the *playground* and *instruction* environments in parallel on your system - allowing for providing instruction from one 
 
@@ -58,8 +63,9 @@ command. As noted above, once running, the platform should be available through 
 
 command. As noted above, once running, the platform should be available through a web browser on your local computer at:
 
-[http://localhost:8889](http://localhost:8889)
+[http://localhost:8888](http://localhost:8888) and [http://localhost:8787](http://localhost:8787) for the *playground*
 
+[http://localhost:8889](http://localhost:8889) and [http://localhost:8788](http://localhost:8788) for the *instruction* platform
 
 In both cases these commands will download and build all of the necessary components of the platform, and start it running. This initial build process (which may take some time, based on the speed of your network connection and your computer) is only executed the first time you run the command and when changes are made to the instructions for building and running the platform. Future excution of this command will go much more quickly as the previously built components will be reused.  
 
