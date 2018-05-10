@@ -69,7 +69,7 @@ command. As noted above, once running, the platform should be available through 
 
 In both cases these commands will download and build all of the necessary components of the platform, and start it running. This initial build process (which may take some time, based on the speed of your network connection and your computer) is only executed the first time you run the command and when changes are made to the instructions for building and running the platform. Future excution of this command will go much more quickly as the previously built components will be reused.  
 
-**The default password for both the *playground* and the *instruction* platform is `password`. See below for instructions for changing the default password for your copy of the platform.**
+**The default password for both the *playground* and the *instruction* Jupyter Notebook component is `password`. The username and password for the RStudio component for both platforms is `rstudio` (for both the username and password). See below for instructions for changing the default password for your copy of the platform.**
 
 To shutdown the platform running on your system issue a `docker-compose down` command from the same directory where the platform was run from. 
 
