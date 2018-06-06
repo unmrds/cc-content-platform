@@ -34,3 +34,6 @@ git clone https://github.com/unmrds/cc-content-platform.git
 
 rm -rf cc-python-data-apis
 git clone https://github.com/unmrds/cc-python-data-apis
+
+rm -rf cc-tech-days
+git clone https://github.com/unmrds/cc-tech-days
