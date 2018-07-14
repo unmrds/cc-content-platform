@@ -10,7 +10,7 @@ RUN dpkg -i pandoc-1.19.1-1-amd64.deb
 RUN apt-get update && \
 	apt-get purge texlive && \
 	apt-get install -y --no-install-recommends \
-	texlive
+	texlive \
 	texlive-fonts-recommended \
 	texlive-fonts-extra \
 	cm-super
