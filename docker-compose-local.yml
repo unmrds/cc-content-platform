@@ -1,0 +1,31 @@
+version: '3'
+services:
+  playground:
+    build:
+      context: ./datascience-notebook
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - playground-data:/home/jovyan
+      - ~/:/home/jovyan/localhome
+    restart: on-failure
+    
+    # replace the hashed password in this command with your own generated with IPython.lib.passwd
+    command: /home/root/startup_playground.sh # --NotebookApp.base_url=/home/jovyan
+
+  playground-rstudio:
+    environment:
+      - PASSWORD=password
+    build:
+      context: ./rstudio
+      dockerfile: Dockerfile
+    ports:
+      - "8787:8787"
+    volumes:
+      - playground-data:/home/rstudio/shareddata
+      - ~/:/home/rstudio/data
+    restart: on-failure
+
+volumes:
+  playground-data:
