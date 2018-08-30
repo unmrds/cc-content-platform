@@ -8,9 +8,14 @@ FROM rocker/rstudio
 # per https://github.com/rocker-org/rocker/issues/246
 
 RUN apt-get update
-RUN R -e "install.packages('dplyr', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('ggplot2', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('ggrepel', repos = 'http://cran.us.r-project.org')"
+RUN apt-get install -y 
+libz-dev
+RUN apt-get install -y libxml2-dev
+
+#RUN R -e "install.packages('dplyr', repos = 'http://cran.us.r-project.org')"
+#RUN R -e "install.packages('ggplot2', repos = 'http://cran.us.r-project.org')"
+#RUN R -e "install.packages('ggrepel', repos = 'http://cran.us.r-project.org')"
+RUN R -e "install.packages('tidyverse', repos = 'http://cran.us.r-project.org')"
 
 # Create a working directory
 # and import data into the image
