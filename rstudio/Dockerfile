@@ -8,8 +8,7 @@ FROM rocker/rstudio
 # per https://github.com/rocker-org/rocker/issues/246
 
 RUN apt-get update
-RUN apt-get install -y 
-libz-dev
+RUN apt-get install -y libz-dev
 RUN apt-get install -y libxml2-dev
 
 #RUN R -e "install.packages('dplyr', repos = 'http://cran.us.r-project.org')"
