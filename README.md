@@ -37,7 +37,7 @@ When run on a local computer the two environments will be available at:
 
 ## Running the platform on your local workstation or on a server
 
-To run the full environment, including downloading all of the workshop materials into the working copy of the platform, you need to have an operating Docker environment on your system that includes both the core Docker engine, and support for the `docker-compose` system. The installation and execution code provided in this repository has been developed and tested with the [Docker Community Edition (CE]](https://www.docker.com/community-edition). Infomation about the Docker CE platform and instructions for installing Docker CE on your system can be found here:
+To run the full environment, including downloading all of the workshop materials into the working copy of the platform, you need to have an operating Docker environment on your system that includes both the core Docker engine, and support for the `docker-compose` system. The installation and execution code provided in this repository has been developed and tested with the [Docker Community Edition (CE)](https://www.docker.com/community-edition). Infomation about the Docker CE platform and instructions for installing Docker CE on your system can be found here:
 
 [https://www.docker.com/community-edition](https://www.docker.com/community-edition). 
 
@@ -69,7 +69,7 @@ command. As noted above, once running, the platform should be available through 
 
 In both cases these commands will download and build all of the necessary components of the platform, and start it running. This initial build process (which may take some time, based on the speed of your network connection and your computer) is only executed the first time you run the command and when changes are made to the instructions for building and running the platform. Future excution of this command will go much more quickly as the previously built components will be reused.  
 
-**The default password for both the *playground* and the *instruction* platform is `password`. See below for instructions for changing the default password for your copy of the platform.**
+**The default password for both the *playground* and the *instruction* Jupyter Notebook component is `password`. The username and password for the RStudio component for both platforms is `rstudio` (for both the username and password). See below for instructions for changing the default password for your copy of the platform.**
 
 To shutdown the platform running on your system issue a `docker-compose down` command from the same directory where the platform was run from. 
 
