@@ -37,8 +37,12 @@ git clone https://github.com/unmrds/cc-python-data-apis
 
 rm -rf cc-tech-days
 git clone https://github.com/unmrds/cc-tech-days
+
 rm -rf cc-tech-days
 git clone https://github.com/unmrds/cc-tech-days
 
 rm -rf cc-taskjuggler
 git clone https://github.com/unmrds/cc-taskjuggler
+
+rm -rf cc-R-RStudio
+git clone https://github.com/unmrds/cc-R-RStudio.git
