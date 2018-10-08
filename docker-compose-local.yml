@@ -8,7 +8,6 @@ services:
       - "8888:8888"
     volumes:
       - playground-data:/home/jovyan
-      - ~/:/home/jovyan/localhome
     restart: on-failure
     
     # replace the hashed password in this command with your own generated with IPython.lib.passwd
@@ -24,7 +23,6 @@ services:
       - "8787:8787"
     volumes:
       - playground-data:/home/rstudio/shareddata
-      - ~/:/home/rstudio/data
     restart: on-failure
 
 volumes:

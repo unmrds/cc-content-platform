@@ -46,3 +46,7 @@ git clone https://github.com/unmrds/cc-taskjuggler
 
 rm -rf cc-R-RStudio
 git clone https://github.com/unmrds/cc-R-RStudio.git
+
+rm -rf cc-nlp
+git clone https://github.com/unmrds/cc-nlp.git
+
