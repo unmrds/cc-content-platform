@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 
 cd /home/jovyan
 
@@ -50,3 +50,5 @@ git clone https://github.com/unmrds/cc-R-RStudio.git
 rm -rf cc-nlp
 git clone https://github.com/unmrds/cc-nlp.git
 
+rm -rf cc-database-2
+git clone https://github.com/unmrds/cc-database-2.git
