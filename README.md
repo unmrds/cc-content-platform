@@ -16,6 +16,8 @@ When initiated, the Coffee & Code instruction environment creates one or two ins
 * One from which the presentation/demonstration can be run
 * A second *Plaground* instance that contains all of the presentation and demonstration materials that workshop participants can experiment with during the workshop. 
 
+![Platform components](graphics/platform_diagram.png)
+
 These platforms are accessible over the web on the host that RDS maintains at:
 
 For the *Playground*\
