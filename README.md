@@ -18,7 +18,7 @@ When initiated, the Coffee & Code instruction environment creates one or two ins
 
 ![Platform components](graphics/platform_diagram.png)
 
-These platforms are accessible over the web on the host that RDS maintains at:
+During workshops and on a temporary basis these platforms are accessible over the web on the host that RDS maintains at:
 
 For the *Playground*\
 Jupyter Notebook: [http://cc.unmrds.net:8888](http://cc.unmrds.net:8888)\
