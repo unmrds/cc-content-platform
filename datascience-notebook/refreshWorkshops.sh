@@ -52,3 +52,6 @@ git clone https://github.com/unmrds/cc-nlp.git
 
 rm -rf cc-database-2
 git clone https://github.com/unmrds/cc-database-2.git
+
+rm -rf cc-noSQL
+git clone https://github.com/unmrds/cc-noSQL.git
