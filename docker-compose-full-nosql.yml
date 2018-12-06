@@ -64,10 +64,7 @@ services:
       - "7474:7474"
       - "7687:7687"
     volumes:
-      - neo4j-data:/db/data 
-    networks:
-      - playground-network
-      - instruction-network
+      - neo4j-data:/db/data
 
 volumes:
   instruction-data:
