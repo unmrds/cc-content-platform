@@ -60,6 +60,9 @@ services:
   neo4j:
     image: neo4j
     restart: on-failure
+    network_mode: "bridge"
+    environment:
+      - NEO4J_AUTH=none
     ports:
       - "7474:7474"
       - "7687:7687"
