@@ -55,20 +55,25 @@ services:
       - mongo-data:/data/db 
     networks:
       - instruction-network
-
-  mongo-playground:
-    image: mongo
-    restart: on-failure
-    volumes:
-      - mongo-data:/data/db 
-    networks:
       - playground-network
 
+  neo4j:
+    image: neo4j
+    restart: on-failure
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j-data:/db/data 
+    networks:
+      - playground-network
+      - instruction-network
 
 volumes:
   instruction-data:
   playground-data:
   mongo-data:
+  neo4j-data:
 
 networks:
   instruction-network:
