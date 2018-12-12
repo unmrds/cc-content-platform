@@ -55,3 +55,6 @@ git clone https://github.com/unmrds/cc-database-2.git
 
 rm -rf cc-noSQL
 git clone https://github.com/unmrds/cc-noSQL.git
+
+rm -rf cc-reproducibility-communication
+git clone https://github.com/unmrds/cc-reproducibility-communication
