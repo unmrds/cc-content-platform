@@ -8,6 +8,9 @@ services:
       - "8888:8888"
     volumes:
       - playground-data:/home/jovyan
+    user: root
+    environment:
+      - "GRANT_SUDU=yes"
     restart: on-failure
     
     # replace the hashed password in this command with your own generated with IPython.lib.passwd
@@ -21,6 +24,8 @@ services:
       - "8787:8787"
     volumes:
       - playground-data:/home/rstudio/shareddata
+    environment:
+      - "PASSWORD=c&c2go"
 
 volumes:
   playground-data:
