@@ -38,9 +38,6 @@ git clone https://github.com/unmrds/cc-python-data-apis
 rm -rf cc-tech-days
 git clone https://github.com/unmrds/cc-tech-days
 
-rm -rf cc-tech-days
-git clone https://github.com/unmrds/cc-tech-days
-
 rm -rf cc-taskjuggler
 git clone https://github.com/unmrds/cc-taskjuggler
 
@@ -58,3 +55,15 @@ git clone https://github.com/unmrds/cc-noSQL.git
 
 rm -rf cc-reproducibility-communication
 git clone https://github.com/unmrds/cc-reproducibility-communication
+
+rm -rf cc-R-data-cleaning
+git clone https://github.com/unmrds/R-data-cleaning
+
+rm -rf cc-digital-literacy
+git clone https://github.com/unmrds/cc-digital-literacy
+
+rm -rf cc-cartography_w_illustrator
+git clone https://github.com/unmrds/cc-cartography_w_illustrator
+
+rm -rf cc-text-processing_w_acrobat
+git clone https://github.com/unmrds/cc-text-processing_w_acrobat
