@@ -56,7 +56,7 @@ git clone https://github.com/unmrds/cc-noSQL.git
 rm -rf cc-reproducibility-communication
 git clone https://github.com/unmrds/cc-reproducibility-communication
 
-rm -rf cc-R-data-cleaning
+rm -rf R-data-cleaning
 git clone https://github.com/unmrds/R-data-cleaning
 
 rm -rf cc-digital-literacy
