@@ -1,5 +1,7 @@
 # UNM RDS Content Platform for the Coffee & Code Workshop Series
 
+[![DOI](https://zenodo.org/badge/128092994.svg)](https://zenodo.org/badge/latestdoi/128092994)
+
 This repository contains the needed code to replicate the presentation and playground environments used for the UNM Research Data Services (RDS) Coffee & Code workshop series.  The materials in this repository leverage Docker as a platform for developing and deploying portable containers that support individual applications. In the case of the Coffee & Code instruction platform, the applications that are integrated into the system include:
 
 * Jupyter Notebooks as a presentation, demonstration, and experimentation environment (based on the [datascience-notebook container](https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook) with the addition of [Pandoc](https://pandoc.org) and [LaTeX](https://www.latex-project.org))
